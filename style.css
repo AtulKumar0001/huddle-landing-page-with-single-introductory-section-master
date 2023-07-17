@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html{
+    height: 100vh;
+}
+body {
+  background-color: var(--Violet);
+  height: 100vh;
+}
+.logo{
+    position: relative;
+    left:2rem;
+}
+header,
+main {
+  position: absolute;
+  z-index: 1;
+}
+header {
+  top: 3rem;
+  left: 2rem;
+  background-color: transparent;
+  color: white;
+}
+main {
+  top: 12rem;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+  left: 4.7rem;
+}
+.desktop-bg {
+  object-fit: cover;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-size: 2.4rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+div.text-content {
+  margin-left: 2.7rem;
+  padding-right: 1rem;
+  position: relative;
+  top: 3.3rem;
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+p.main-paragraph {
+  font-size: 1.1rem;
+  color: white;
+  padding-right: .3rem;
+  margin-bottom: 2rem;
+  line-height: 1.7rem;
+}
+.btn {
+  padding: 1rem 4rem;
+  border-radius: 7rem;
+  border: none;
+  font-size: 1rem;
+  color: var(--Violet);
+  margin-bottom:12rem;
+}
+.social-icons > i {
+  color: #ffffff;
+  border: 1px solid white;
+  padding: 0.7rem;
+  border-radius:100%;
+  float:right;
+  z-index:3;
+  display: flex;
+  margin:.6rem;
+  width:37px;
+}
+.social-icons>i:hover{
+  color: var(--Soft-Magenta);
+  border: 1px solid var(--Soft-Magenta);
+}
+.btn:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+.hidden-mobile{
+  display:none;
+}
+@media (max-width:1250px) and (min-width:300px){
+  main{
+  flex-direction: column;
+  align-items: center;
+  left:0;
+  width:100%;
+  margin:0;
+  padding:0 2rem;
+
+  }
+h1{
+  font-size:1.8rem;
+}
+
+  .hidden-mobile{
+    display:block;
+  }
+  .hidden-desktop{
+    display:none;
+  }
+  .mobile-bg {
+    object-fit: cover;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+  }
+  .mockup{
+    width:100%;
+    float:middle;
+  }
+  
+  .btn{
+    margin-bottom: 3rem;
+  }
+  div.button{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  div.text-content{
+    padding-right: 0;
+    width:100%;
+    text-align: center;
+    margin-left:0;
+  }
+  .logo{
+    position: none;
+    left:0;
+    float:left;
+  }
+  .social-icons > i {
+    padding: 0.5rem;
+    margin:.4rem;
+    width:30px;
+  }
+  .social-icons{
+    display: inline-block;
+    margin: 0 auto;
+
+  }
+}
+
+
+
+
+
+
